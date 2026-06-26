@@ -171,19 +171,19 @@ Spalart-Allmaras
 
 ## Lift Coefficient
 
-![Lift](images/cl.png)
+![Lift](images/Cl.png)
 
 ---
 
 ## Drag Coefficient
 
-![Drag](images/cd.png)
+![Drag](images/Cd.png)
 
 ---
 
 ## Lift-to-Drag Ratio
 
-![L/D](images/cl_cd.png)
+![L/D](images/cL_cD.png)
 
 ---
 
