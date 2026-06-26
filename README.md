@@ -38,9 +38,6 @@ The repository consists of three classical validation cases commonly used in aca
 Each project includes complete geometry, mesh, solver settings, validation data, and post-processing results.
 
 ---
-
-# ⭐ Featured Project
-
 # ✈️ NACA 0012 Airfoil Validation
 
 The **NACA 0012 Airfoil** is the primary focus of this repository and represents the most comprehensive CFD study included here.
