@@ -1,0 +1,37 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: 0012 naca airfoil validation
+# Creation date: 06/24/2026 18:52:10
+# 
+# 06/24/2026 18:52:10
+# The parameters defined in the project are:
+# ,P7 - drag-coeff-op,P8 - lift-coeff-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P7,P8
+DP 0,0.01394903,1.072426
+DP 1,-0.17243915,1.0585637
+# 
+# 06/25/2026 21:02:13
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P7 - drag-coeff-op,P8 - lift-coeff-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P7,P8
+DP 1,-0.17243915,1.0585637
+# 
+# 06/25/2026 21:14:05
+# Parameters have been added and/or removed. The parameters now defined in the project are:
+# ,P7 - drag-coeff-op,P8 - lift-coeff-op
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P7,P8
+DP 1,-0.17243915,1.0585637
+# 
+# A non parametric change occurred and invalidated design point results.
+# 06/25/2026 22:09:25
+# 
+# 
+# A non parametric change occurred and invalidated design point results.
+# 06/26/2026 00:20:45
+# 

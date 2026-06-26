@@ -1,0 +1,176 @@
+
+Build Time: Dec  4 2018 13:55:34 
+Executable Path: D:/ANSYS_~1/ANSYSI~1/v193/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor      
+-------------------------------------------------------------------------------
+n0*   DESKTOP-3TBU64C  1/12  Windows-x64  21244  AMD Ryzen 5 
+host  DESKTOP-3TBU64C        Windows-x64  27732  AMD Ryzen 5 
+
+MPI Option Selected: ibmmpi
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+()
+
+
+> (wb-load-pre-setup-info '((work-dir . "./")(system-type . "FFF")(is-sol . #t)(wb-version . "16.0.2013.11.18.01")(is-connected-to-sc . #f)))
+system-type
+
+
+> (wb-set-base-name "FFF")
+base-name
+
+
+> (wb-set-preferences (list (cons 'show-beta-options #f)(cons 'write-setup-output #t)(cons 'write-interpolation #t)(cons 'enable-solution-monitoring #t)))
+
+
+> (wb-set-container-info 1 0 0 #f)
+n-incoming-connections
+
+
+> (wb-update-run-number 10)
+autosave/run-number
+
+
+> (wb-update-preread-model-settings   (list (cons "ReportDefFiles"(list "drag-coeff-rfile.out" "lift-coeff-rfile.out" )) ))
+from-wb-ftype-names
+
+
+> (wb-enable-warnings #f)
+disable-input-dialogs
+
+
+> (wb-set-base-name "FFF")
+base-name
+
+
+> (wb-load-case-setting-info '((set-file . "FFF.set")(mesh-ops . "((expected-zone-names inlet outlet naca_0012 fluid-surface_body) (operations-list))")(case-file . "FFF-Setup-Output.cas.gz")(file-type . "Case")(setup-output . "#t")))
+Multicore SMT processors detected. Processor affinity set!
+
+Reading Settings file "FFF.set"...
+
+
+Reading "\"| gunzip -c \\"FFF-Setup-Output.cas.gz\\"\""...
+
+Buffering for file scan...
+
+
+
+  251000 quadrilateral cells, zone  3, binary.
+Warning: reading 7 partition grid onto 1 compute node machine.
+         Combining every 7 partitions.
+  251000 cell partition ids, zone  3, 1 partitions, binary.
+  499496 2D interior faces, zone  1, binary.
+    1350 2D interior faces, zone  2, binary.
+    1004 2D velocity-inlet faces, zone  6, binary.
+     500 2D pressure-outlet faces, zone  7, binary.
+     804 2D wall faces, zone  8, binary.
+  252154 nodes, binary.
+252154 node flags, binary.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	naca_0012
+	outlet
+	inlet
+	surface_body
+	interior-surface_body
+	fluid-surface_bodySetting fluid-surface_body (mixture) ... Done.
+ Setting zone id of fluid-surface_body to 3.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of surface_body to 2.
+ Setting zone id of inlet to 6.
+ Setting zone id of outlet to 7.
+ Setting zone id of naca_0012 to 8.
+Done.
+Setting fluid-surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting naca_0012 (mixture) ... Done.
+
+     parallel,
+Ignoring the clean up of checkpoint-exit file in wb-pending-run ...
+
+Done.
+
+Preparing mesh for display...
+Done.
+#f
+
+
+> (wb-enable-warnings #t )
+disable-input-dialogs
+
+
+> (wb-load-post-setup-info '((original-mesh . #t)(run-number . 10)(check-grid . #t)(sol-needs-refresh . #f)))
+#f
+
+
+> (wb-update-em-loss-data '#f"<EM-copling disabled>"#f)
+
+
+
+> (wb-read-init-data "FFF-10-00200.dat.gz")
+
+Reading "\"| gunzip -c \\"FFF-10-00200.dat.gz\\"\""...
+
+
+
+Parallel variables...
+Done.
+cdat-case-id
+
+
+> (wb-enable-progress-writing #t)
+monitor-lambdas
+
+
+> (wb-update-run-number 10)
+autosave/run-number
+
+
+> (wb-update-solution #f )
+
+  iter  continuity  x-velocity  y-velocity         nut  drag-coeff     time/iter
+
+Writing "| gzip -2cf > status.txt.gz"...
+
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-277322 ...
+Done.
+
+   200  4.4181e-05  2.1786e-10  2.1403e-10  3.5632e-09 -1.7244e-01  0:00:00  100
+   201  4.0099e-05  2.7819e-10  2.8461e-10  3.6646e-09 -1.7244e-01  0:01:39   99
+
+Writing "| gzip -2cf > FFF-10.cas.gz"...
+
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-277323 ...
+  251000 quadrilateral cells, zone  3, binary.
+  499496 2D interior faces, zone  1, binary.
+    1350 2D interior faces, zone  2, binary.
+    1004 2D velocity-inlet faces, zone  6, binary.
+     500 2D pressure-outlet faces, zone  7, binary.
+     804 2D wall faces, zone  8, binary.
+  252154 nodes, binary.
+  252154 node flags, binary.
+Done.
+
+
+Writing "| gzip -2cf > FFF-10-00201.dat.gz"...
+
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-277324 ...
+Done.
+
+Writing #restart.inp
+
+(wb-save #t)
+(wb-stop-transcript-file)
+(wb-exit)
+Done.

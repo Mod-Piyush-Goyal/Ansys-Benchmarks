@@ -1,0 +1,137 @@
+
+Build Time: Dec  4 2018 13:55:34 
+Executable Path: D:/ANSYS_~1/ANSYSI~1/v193/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor      
+-------------------------------------------------------------------------------
+n6    DESKTOP-3TBU64C  7/12  Windows-x64  15216  AMD Ryzen 5 
+n5    DESKTOP-3TBU64C  6/12  Windows-x64  17296  AMD Ryzen 5 
+n4    DESKTOP-3TBU64C  5/12  Windows-x64  18744  AMD Ryzen 5 
+n3    DESKTOP-3TBU64C  4/12  Windows-x64  3700   AMD Ryzen 5 
+n2    DESKTOP-3TBU64C  3/12  Windows-x64  25132  AMD Ryzen 5 
+n1    DESKTOP-3TBU64C  2/12  Windows-x64  2744   AMD Ryzen 5 
+n0*   DESKTOP-3TBU64C  1/12  Windows-x64  20824  AMD Ryzen 5 
+host  DESKTOP-3TBU64C        Windows-x64  3024   AMD Ryzen 5 
+
+MPI Option Selected: ibmmpi
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Multicore SMT processors detected. Processor affinity set!
+Reading "\"| gunzip -c \\"D:\anys_tutorial\0012 naca airfoil validation\0012 naca airfoil validation_files\dp0\FFF\Fluent\FFF-Setup-Output.cas.gz\\"\""...
+Buffering for file scan...
+
+
+
+  251000 quadrilateral cells, zone  3, binary.
+  251000 cell partition ids, zone  3, 7 partitions, binary.
+  499496 2D interior faces, zone  1, binary.
+    1350 2D interior faces, zone  2, binary.
+    1004 2D velocity-inlet faces, zone  6, binary.
+     500 2D pressure-outlet faces, zone  7, binary.
+     804 2D wall faces, zone  8, binary.
+  252154 nodes, binary.
+252154 node flags, binary.
+
+Building...
+     mesh
+	distributing mesh
+		parts.......,
+		faces.......,
+		nodes.......,
+		cells.......,
+        bandwidth reduction using Reverse Cuthill-McKee: 35849/169 = 212.124
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	naca_0012
+	outlet
+	inlet
+	surface_body
+	interior-surface_body
+	fluid-surface_bodySetting fluid-surface_body (mixture) ... Done.
+ Setting zone id of fluid-surface_body to 3.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of surface_body to 2.
+ Setting zone id of inlet to 6.
+ Setting zone id of outlet to 7.
+ Setting zone id of naca_0012 to 8.
+Done.
+Setting fluid-surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting surface_body (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting naca_0012 (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+Initialization based on settings...
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+     1  1.0000e+00  1.9542e+05  1.9562e+02  3.6737e-02  0:33:19 1999
+     2  7.7682e-01  2.0226e-04  5.5775e-05  1.8210e-02  0:26:38 1998
+     3  3.0192e-01  2.9506e-05  8.7025e-06  7.2875e-03  0:27:57 1997
+     4  1.6120e-01  1.6610e-05  3.3502e-06  2.7119e-03  0:22:21 1996
+     5  8.9129e-02  1.0220e-05  1.5050e-06  9.4411e-04  0:24:32 1995
+     6  4.8106e-02  6.0268e-06  7.2358e-07  3.1283e-04  0:19:37 1994
+     7  2.7625e-02  3.4125e-06  3.7768e-07  1.0017e-04  0:22:19 1993
+     8  1.6897e-02  1.8847e-06  2.1278e-07  3.1856e-05  0:17:51 1992
+     9  1.1219e-02  1.0461e-06  1.3052e-07  1.0529e-05  0:20:55 1991
+    10  7.6703e-03  5.8911e-07  8.3201e-08  3.5998e-06  0:23:21 1990
+    11  5.3443e-03  3.4044e-07  5.3809e-08  1.3375e-06  0:25:18 1989
+
+  iter  continuity  x-velocity  y-velocity         nut     time/iter
+    12  3.9285e-03  2.1210e-07  3.7376e-08  5.3885e-07  0:26:52 1988
+    13  2.8724e-03  1.5014e-07  2.6999e-08  2.5163e-07  0:28:06 1987
+
+Interrupting...
+    14  2.1569e-03  1.1669e-07  2.0516e-08  1.4438e-07  0:29:05 1986
+Done.
+Registering ReportDefFiles, ("D:\anys_tutorial\0012 naca airfoil validation\0012 naca airfoil validation_files\dp0\FFF\Fluent\\drag-coeff-rfile.out" "D:\anys_tutorial\0012 naca airfoil validation\0012 naca airfoil validation_files\dp0\FFF\Fluent\\lift-coeff-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-30242 ...
+Done.
+
+Writing "| gzip -2cf > FFF-3.cas.gz"...
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-30243 ...
+  251000 quadrilateral cells, zone  3, binary.
+  251000 cell partition ids, zone  3, 7 partitions, binary.
+  499496 2D interior faces, zone  1, binary.
+    1350 2D interior faces, zone  2, binary.
+    1004 2D velocity-inlet faces, zone  6, binary.
+     500 2D pressure-outlet faces, zone  7, binary.
+     804 2D wall faces, zone  8, binary.
+  252154 nodes, binary.
+  252154 node flags, binary.
+Done.
+
+Writing "| gzip -2cf > FFF-3-00014.dat.gz"...
+Writing temporary file C:\\Users\\Piyush\\AppData\\Local\\Temp\\flntgz-30244 ...
+Done.
+
+
+Performance Timer for 14 iterations on 7 compute nodes
+  Average wall-clock time per iteration:              0.652 sec
+  Global reductions per iteration:                      100 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                        17408 messages
+  Data transfer per iteration:                        9.329 MB
+  LE solves per iteration:                                2 solves
+  LE wall-clock time per iteration:                   0.485 sec (74.3%)
+  LE global solves per iteration:                         8 solves
+  LE global wall-clock time per iteration:            0.001 sec (0.2%)
+  LE global matrix maximum size:                        36
+  AMG cycles per iteration:                           8.571 cycles
+  Relaxation sweeps per iteration:                      833 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+
+  Total wall-clock time:                              9.133 sec
+
